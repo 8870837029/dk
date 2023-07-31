@@ -1,0 +1,48 @@
+package org.college;
+public class College{
+   public void collegeName(){
+      System.out.println(" Anna University ");
+        }
+   public void collegeCode(){
+      System.out.println( " The code is 0987 ");
+        }
+   public void collegeRank(){
+       System.out.println( " The Rank is 10 ");
+        }
+---------------------------------------------------------
+package org.college;
+public class Hostel extends College{
+    public void hostelName(){
+       System.out.println(" The Hostel Name is xyz ");
+        }
+------------------------------------------------------------
+package org.college;
+public class Dept extends Hostel{
+      public void deptName(){
+        System.out.println(" The department is ComputerScience ");
+          }
+---------------------------------------------------------------
+package org.college;
+public class Student extends Dept{
+        private void studentName(){
+          System.out.println(" Student is stallon ");
+           }
+        private void studentDept(){
+           System.out.println(" CSE ");
+           }
+         private void studentID(){
+           System.out.println(" 1234 ");
+           }
+public static void main(String[]args){
+         Student a = new Student();
+         a.studentName();
+         a.studentDept();
+         a.studentID();
+         a.deptName();
+         a.hostelName();
+         a.collegeName();
+         a.collegeCode();
+         a.collegeRank();
+         }
+}
+       

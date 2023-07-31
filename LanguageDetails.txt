@@ -1,0 +1,30 @@
+public class Tamil{
+   public void tamilLanguage(){
+      System.out.println(" File Tamil Language ");
+        }
+    }
+--------------------------------------------------------
+public class English extends Tamil{
+      public void englishLanguage(){
+         System.out.println(" File English Language ");
+          }
+     }
+----------------------------------------------------------
+public class Telugu extends English{
+      public void teluguLanguage(){
+         System.out.println(" File Telugu Language ");
+          }
+     }
+------------------------------------------------------------
+public class LanguageClass extends Telugu{
+       private void allLanguage(){
+          System.out.println(" File of all Languages ")
+           }
+      public static void main(String[]args){
+      LanguageClass a = new LanguageClass();
+      a.allLanguage();
+      a.tamilLanguage();
+      a.englishLanguage();
+      a.teluguLanguage();
+       }
+}

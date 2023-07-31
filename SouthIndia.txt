@@ -1,0 +1,38 @@
+org.tamilnadu;
+
+public class TamilNadu{
+  public void tamilLanguage(){
+    System.out.println(" Tamil is spoken in Tamilnadu ");
+     }
+-------------------------------------------------------------------
+org.kerala;
+import org.tamilnadu.TamilNadu;
+
+public class Kerala extends Tamilnadu{
+   public void malayalam(){
+     System.out.println(" Malayalam is spoken in Kerala ");
+       }
+-----------------------------------------------------------------------
+org.andhrapradesh;
+import org.kerala.Kerala;
+
+public class AndhraPradesh extends Kerala{
+   public void telugu(){
+     System.out.println(" Telugu is spoken in Andhrapradesh ");
+       }
+-----------------------------------------------------------------------
+org.india;
+import org.andhrapradesh.AndhraPradesh;
+
+public class India extends AndhraPradesh{
+  private void india(){
+     System.out.println(" Different languages in India ");
+       }
+public static void main(String[]args){
+      India a = new India();
+      a.india();
+      a.tamilLanguage();
+      a.malayalam();
+      a.telugu();
+      }
+}

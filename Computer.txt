@@ -1,0 +1,19 @@
+package org.computer
+
+public class Computer{
+  public void computerModel(){
+     System.out.println(" Levnovo xyz ");
+        }
+---------------------------------------------------
+package org.computer
+
+public class Desktop extends Computer{
+    private void desktopSize(){
+       System.out.println(" 26 by 14 inches ");
+          }
+public static void main(String[]args){
+      Desktop a = new Desktop();
+      a.desktopSize();
+      a.computerModel();
+       }
+  }

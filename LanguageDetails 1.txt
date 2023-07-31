@@ -1,0 +1,27 @@
+package org.lang
+
+public class StateDetails{
+  public void southIndia(){
+    System.out.println(" Tamil nadu, Kerala etc ");
+     }
+  public void northIndia(){
+    System.out.println(" Delhi, Gujarat etc ");
+     }
+------------------------------------------------------------------
+package org.lang
+
+public class LanguageInfo extends StateDetails{
+   private void tamilLanguage(){
+     System.out.println(" Tamil ");
+      }
+   private void englishLanguage(){
+     System.out.println(" English ");
+      }
+public static void main(String[]args){
+    LanguageInfo a = new LanguageInfo();
+    a.tamilLanguage();
+    a.englishLanguage();
+    a.southIndia();
+    a.northIndia();
+    }
+}

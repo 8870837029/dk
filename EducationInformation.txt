@@ -1,0 +1,66 @@
+package org.edu
+
+public class Arts{
+  public void bsc(){
+    System.out.println(" BSC ");
+      }
+   public void bEd(){
+     System.out.println(" BEd ");
+       }
+   public void bA(){
+      System.out.println(" bA ");
+       }
+    public void bBA(){
+      System.out.println(" BBA ");
+       }
+}
+--------------------------------------
+pacakage org.edu
+
+public class Engineering extends Arts{
+    public void bE(){
+      System.out.println(" B.E ");
+        }
+     public void bTech(){
+      System.out.println(" B.Tech ");
+        }
+}
+----------------------------------------
+package org.edu
+
+public class Medicine extends Engineering{
+      public void physio(){
+         System.out.println(" Physio "):
+           }
+       public void dental(){
+          System.out.println("dental");
+           }
+       public void mbbs(){
+           System.out.println(" M.B.B.S ");
+           }
+}
+-------------------------------------------------- 
+package org.edu
+
+public class Education extends Medicine{
+       private void ug(){
+         System.out.println(" Under Graduate ");
+           }
+       private void pg(){ 
+         System.out.println(" Post Graduate ");
+           }
+public static void main(String[]args){
+     Education a = new Education();
+     a.ug();
+     a.pg();
+     a.physio();
+     a.dental();
+     a.mbbs();
+     a.bE();
+     a.bTech();
+     a.bsc();
+     a.bEd();
+     a.bA();
+     a.bBA();
+    }
+}
